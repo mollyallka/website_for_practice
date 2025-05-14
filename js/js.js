@@ -245,7 +245,7 @@ if (checkoutBtn) {
 
         if (!isAuth) {
             if (errorBlock) {
-                errorBlock.textContent = "Перед оформлением заказа зарегистрируйтесь в личном кабинете.";
+                errorBlock.innerHTML = 'Перед оформлением заказа зарегистрируйтесь <a href="../html/account.html" style="color: rgb(221, 34, 34); text-decoration: underline;">в личном кабинете</a>.';
                 errorBlock.style.display = "block";
             }
             return;
