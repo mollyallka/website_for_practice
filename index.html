@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TYK-TYK</title>
+</head>
+<body>
+    <div class="logo-section">
+        <div class="logo-wrap">
+            <span class="logo-text">TYK</span>
+            <div class="logo-img-wrap">
+                <a href="index.html"><img src="photo/logo.png" alt="Лого" id="logo" class="logo-img"></a>
+            </div>
+            <span class="logo-text">TYK</span>
+        </div>
+        <p class="logo-text-info">sushi delivery</p>
+    </div>
+
+    
+    <nav class="header-container-menu">
+        <ul class="menu-main">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="html/about_us.html">О нас</a></li>
+            <li><a href="html/menu.html">Меню</a></li>
+            <li><a href="html/korzina.html">Корзина</a></li>
+            <li><a href="html/account.html">Личный кабинет</a></li>
+        </ul>
+    </nav> 
+    <div class="line-menu"></div>
+    
+    <div class="text-about-us">
+        <div class="about-text-centered">
+            Суши «Тук-Тук» — мы постучимся в Вашу дверь <br>
+            «Тук-тук» — качество и вкус.
+        </div>
+    </div>
+
+    <div class="rolls-container">
+        <div class="rolls-flex-wrapper">
+            <div class="main-text-rolls">
+                <a href="html/menu.html#rolls" class="container-main-text-name link-heading"><b>РОЛЛЫ</b></a>
+                <div class="line-menu-mini"></div>
+            </div>
+            
+            <div class="container-main-chapter-card">
+                <div class="photo-main">
+                    <a href="html/menu.html#rolls">
+                        <img src="photo/роллы.jpg" alt="Роллы" id="photoRolls" class="photoRolls">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rolls-flex-wrapper">
+            <div class="main-text-rolls">
+                <a href="html/menu.html#baked" class="container-main-text-name link-heading"><b>ЗАПЕЧЕННЫЕ РОЛЛЫ</b></a>
+                <div class="line-menu-mini"></div>
+            </div>
+            
+            <div class="container-main-chapter-card">
+                <div class="photo-main">
+                    <a href="html/menu.html#baked">
+                        <img src="photo/запеч.PNG" alt="Запеч. роллы" id="photoRolls" class="photoRolls">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rolls-flex-wrapper">
+            <div class="main-text-rolls">
+                <a href="html/menu.html#sets" class="container-main-text-name link-heading"><b>НАБОРЫ</b></a>
+                <div class="line-menu-mini"></div>
+            </div>
+            
+            <div class="container-main-chapter-card">
+                <div class="photo-main">
+                    <a href="html/menu.html#sets">
+                        <img src="photo/наборы.PNG" alt="наборы" id="photoRolls" class="photoRolls">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="other-container">
+        <button class="info-box js-open-modal" data-target="modal1">
+            СОПУТСТВУЮЩИЙ<br> ТОВАР
+        </button>
+        <button class="info-box js-open-modal" data-target="modal2">
+            ДОСТАВКА и<br> ОПЛАТА
+        </button>
+        <button class="info-box js-open-modal" data-target="modal3">
+            Нам важно ваше<br> МНЕНИЕ
+        </button>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Скрытые блоки контента -->
+    <div id="modal1" class="modal-block-container" style="display:none;">
+        <p class="modal-sop">Дополнительно к заказу вы можете взять:</p>
+        <ul class="modal-ul">
+            <li class="modal-item">
+                <img src="photo/имбирь.jpeg" alt="Имбирь" class="modal-img-comp">
+                <div class="modal-item-text-comp">
+                    <p class="modal-sop-tovar"><strong>Имбирь</strong></p>
+                    <p class="text-structure-modal-item">35 г</p>
+                    <p class="price-modal-item">55 ₽</p>
+                </div>
+            </li>
+            <li class="modal-item">
+                <img src="photo/soev.jpeg" alt="Соевый соус" class="modal-img-comp">
+                <div class="modal-item-text-comp">
+                    <div class="modal-item-left">
+                        <p class="modal-sop-tovar"><strong>Соевый соус</strong></p>
+                        <p class="text-structure-modal-item">70 г</p>
+                        <p class="price-modal-item">75 ₽</p>
+                    </div>
+                </div>  
+            </li>
+            <li class="modal-item">
+                <img src="photo/васаби.jpeg" alt="Васаби" class="modal-img-comp">
+                <div class="modal-item-text-comp">
+                    <p class="modal-sop-tovar"><strong>Васаби</strong></p>
+                    <p class="text-structure-modal-item">10 г</p>
+                    <p class="price-modal-item">55 ₽</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div id="modal2" class="modal-block-container" style="display:none;">
+        <p class="modal-sop">Доставка осуществляется с 10:00 до 22:00. <br>Минимальная сумма заказа — 500 ₽. <br>Оплата осуществляется переводом/наличными.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6095799385143!2d30.31563531583092!3d59.93873218187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310d1d472ccb%3A0x3e49c3c787c2b8ee!2z0JHQvtCz0LDRgNC90LAg0JrQvtC80YHQvtCy0LAg0KHQvtCz0LXRgNC10YHRgtCy0LAsIDIy!5e0!3m2!1sru!2sru!4v1614842349314!5m2!1sru!2sru" 
+        width="350" height="250" 
+        allowfullscreen="" 
+        loading="lazy" 
+        alt="Карта доставки"
+        class="modal-img">
+    </iframe>
+</div>
+
+    <div id="modal3" class="modal-block-container" style="display:none;">
+        <p class="modal-sop">Нам очень приятно, когда вы оставляете отзывы в Telegram канале или на нашем сайте.</p>
+        <a href="https://t.me/sushityktik" target="_blank" class="modal-a">Оставить отзыв</a>
+    </div>
+
+
+    <div class="why-us">
+        <img src="photo/краб.png" alt="Краб" class="side-photo left">
+        <h2 class="about-text-centered">Почему выбирают нас?</h2>
+        <ul>
+            <li>🚀 Быстрая доставка</li>
+            <li>🍣 Только свежие ингредиенты</li>
+            <li>💬 Быстрая поддержка в Telegram</li>
+        </ul>
+        <img src="photo/креветка.png" alt="Креветка" class="side-photo right">
+    </div>
+    
+    <div id="cart-float-btn" class="cart-float-btn" onclick="goToCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      
+    <button id="toTopBtn" title="Вернуться наверх">↑</button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><img src="photo/logo.png" alt="TYK-TYK Лого"></a>
+            </div>
+            <div class="footer-info">
+                <p><strong>Телефон:</strong><br><a href="tel:+79005553535">+7 (900) 555-35-35</a></p>
+                <p><strong>Часы работы:</strong><br>Пн–Сб: 10:00–22:00 <br> Воскресенье: Выходной</p>
+                <p>
+                    <a href="https://t.me/sushityktik" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" class="telegram-icon"> Sushi 🍱 “ТYК-ТYК”
+                    </a>
+                </p>
+            </div>
+            <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6095799385143!2d30.31563531583092!3d59.93873218187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310d1d472ccb%3A0x3e49c3c787c2b8ee!2z0JHQvtCz0LDRgNC90LAg0JrQvtC80YHQvtCy0LAg0KHQvtCz0LXRgNC10YHRgtCy0LAsIDIy!5e0!3m2!1sru!2sru!4v1614842349314!5m2!1sru!2sru" 
+                width="300" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            </div>
+        </div>
+    <hr class="footer-line">
+    <p class="footer-copy">&copy; 2025 TYK-TYK. Все права защищены.</p>
+    </footer>
+      <script src="js/js.js"></script>
+</body>
+</html>

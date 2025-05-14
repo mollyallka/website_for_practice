@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TYK-TYK</title>
+</head>
+<body>
+    <div class="logo-section">
+        <div class="logo-wrap">
+            <span class="logo-text">TYK</span>
+            <div class="logo-img-wrap">
+                <a href="../index.html"><img src="../photo/logo.png" alt="Лого" id="logo" class="logo-img"></a>
+            </div>
+            <span class="logo-text">TYK</span>
+        </div>
+        <p class="logo-text-info">sushi delivery</p>
+    </div>
+
+    
+    <nav class="header-container-menu">
+        <ul class="menu-main">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../html/about_us.html">О нас</a></li>
+            <li><a href="../html/menu.html" class="active">Меню</a></li>
+            <li><a href="../html/korzina.html">Корзина</a></li>
+            <li><a href="../html/account.html">Личный кабинет</a></li>
+        </ul>
+    </nav> 
+    <div class="line-menu"></div>
+
+    <div class="mess-go-registration">
+        Пожалуйста, перед тем, как совершить заказ на нашем сайте, зарегистрируйтесь в
+        <a href="../html/account.html" class="mess-go-registration-link"> личном кабинете</a>
+        <div class="line-menu"></div>
+        <p>Перед заказом, просьба ознакомиться с <a class="mess-go-registration-sos"> составом</a> каждой позиции меню!</p>
+    </div>
+
+    <div class="search-wrapper">
+        <label>
+            <input type="text" id="menuSearch" placeholder="Поиск позиций по меню...">
+        </label>
+    </div>
+        
+    <div class="main-text-rolls" id="rolls">
+        <a href="html/menu.html#rolls" class="container-main-text-name link-heading"><b>РОЛЛЫ</b></a>
+    </div>
+
+    <div class="card-rolls">
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/фила.jpeg" target="_blank"><img src="../photo/фила.jpeg" alt="Фила" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Филадельфия классик</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">760₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">Рис, нори, сыр, огурец, лосось <br> / 290 гр.</p>
+                </div>
+                <button class="order" data-name="Филадельфия классик"
+                data-price="760"
+                data-img="../photo/фила.jpeg">Заказать</button>
+            </div>
+        </div>
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/Hot_spais.jpeg" target="_blank"><img src="../photo/Hot_spais.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Hot спайси лосось</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">710₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">Рис, нори, сыр, авокадо, креветка, нити чили-перца, «шапочка»
+                    спайси лосось, чёрная икра палтуса<br> / 250 гр.</p>
+                </div>
+                <button class="order" data-name="Hot спайси лосось"
+                data-price="710"
+                data-img="../photo/Hot_spais.jpeg">Заказать</button>
+            </div>
+        </div>
+
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/Хотате.jpeg" target="_blank"><img src="../photo/Хотате.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Хотате</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">790₽</p>
+                </div>
+                <div class="text-sostav">
+                    <p class="text-structure">Маминори (рисовая бумага), рис, лосось, манго, сыр,
+                    «шапочка» гребешок, спайси соус<br> / 290 гр.</p>
+                </div>
+                <button class="order" data-name="Хотате"
+                data-price="790"
+                data-img="../photo/Хотате.jpeg">Заказать</button>
+            </div>
+        </div>
+    
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/ovosh_pp.jpeg" target="_blank"><img src="../photo/ovosh_pp.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Овощной ПП</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">670₽</p>
+                </div>
+                <div class="text-sostav">
+                    <p class="text-structure">Рис, нори, огурец, авокадо, лист салата, помидор, перец, ореховый соус, укроп<br> / 250 гр.</p>
+                </div>
+                <button class="order" data-name="Овощной ПП"
+                data-price="670"
+                data-img="../photo/ovosh_pp.jpeg">Заказать</button>
+            </div>
+        </div>
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/карам-фила.jpeg" target="_blank"><img src="../photo/карам-фила.jpeg" alt="Фила карам" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Карамельная филадельфия</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">790₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">Рис, нори, сыр, огурец, лосось, тростниковый сахар, унаги-соус, лепестки
+                    миндаля<br> / 290 гр.</p>
+                </div>
+                <button class="order" data-name="Карамельная филадельфия"
+                data-price="790"
+                data-img="../photo/карам-фила.jpeg">Заказать</button>
+            </div>
+        </div>
+
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/танго.jpeg" target="_blank"><img src="../photo/танго.jpeg" alt="Танго лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Танго-Лосось</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">750₽</p>
+                </div>
+                <div class="text-sostav">
+                    <p class="text-structure">Рис, нори, сыр, огурец, лосось, икра лосося, икра тобико, соус спайси<br> / 290 гр.</p>
+                </div>
+                <button class="order" data-name="Танго-Лосось"
+                data-price="750"
+                data-img="../photo/танго.jpeg">Заказать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-text-rolls" id="baked">
+        <a href="html/menu.html#baked" class="container-main-text-name link-heading"><b>ЗАПЕЧЕННЫЕ РОЛЛЫ</b></a>
+    </div>
+
+    <div class="card-rolls">
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/запеченные.jpeg" target="_blank"><img src="../photo/запеченные.jpeg" alt="Фила" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Запеченный с креветкой</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">530₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">Рис, нори, сыр, угорь, «шапочка» - креветка, соус спайси, соус для
+                    запекания <br> / 245 гр.</p>
+                </div>
+                <button class="order" data-name="Запеченный с креветкой"
+                data-price="530"
+                data-img="../photo/запеченные.jpeg">Заказать</button>
+            </div>
+        </div>
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/запеченные.jpeg" target="_blank"><img src="../photo/запеченные.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Запеченный с лососем</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">500₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">Рис, нори, сыр, авокадо, снежный краб, «шапочка» - лосось, соус спайси, соус для
+                    запекания<br> / 245 гр.</p>
+                </div>
+                <button class="order" data-name="Запеченный с лососем"
+                data-price="500"
+                data-img="../photo/запеченные.jpeg">Заказать</button>
+            </div>
+        </div>
+
+        <div class="container-product-card">
+            <div class="photo">
+                <a href="../photo/запеченные.jpeg" target="_blank"><img src="../photo/запеченные.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Запеченный с гребешком</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price">
+                    <p class="price">490₽</p>
+                </div>
+                <div class="text-sostav">
+                    <p class="text-structure">Рис, нори, сыр, лосось, «шапочка» - гребешок, соус спайси, соус для
+                        запекания<br> / 245 гр.</p>
+                </div>
+                <button class="order" data-name="Запеченный с гребешком"
+                data-price="490"
+                data-img="../photo/запеченные.jpeg">Заказать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-text-rolls" id="sets">
+        <a href="html/menu.html#sets" class="container-main-text-name link-heading"><b>НАБОРЫ</b></a>
+    </div>
+
+    <div class="card-rolls">
+        <div class="container-product-card-menu">
+            <div class="photo-menu">
+                <a href="../photo/набор1.jpeg" target="_blank"><img src="../photo/набор1.jpeg" alt="Фила" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Набор №1</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price-menu">
+                    <p class="price">1680₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">1. Hot🔥 спайси лосось (4 шт)<br>
+                    2. Кана-ДА (4 шт)/Тар-тар лосось (4 шт)<br>
+                    3. Филадельфия классик (4 шт)<br>
+                    4. Запеченный с угрем (3 шт)<br>
+                    </p>
+                </div>
+                <button class="order" data-name="Набор №1"
+                data-price="1680"
+                data-img="../photo/набор1.jpeg">Заказать</button>
+            </div>
+        </div>
+        <div class="container-product-card-menu">
+            <div class="photo-menu">
+                <a href="../photo/набор2.jpeg" target="_blank"><img src="../photo/набор2.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Набор №2</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price-menu">
+                    <p class="price">1150₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">  1. Филадельфия классик - 4 шт.<br>
+                    2. Кана-ДА/Майями - 4 шт.<br>
+                    3. Запеченные с лососем - 3 шт.<br>
+                    4. Маки с лососем - 8 шт.<br></p>
+                </div>
+                <button class="order" data-name="Набор №2"
+                data-price="1150"
+                data-img="../photo/набор2.jpeg">Заказать</button>
+            </div>
+        </div>
+
+        <div class="container-product-card-menu">
+            <div class="photo-menu">
+                <a href="../photo/набор3.jpeg" target="_blank"><img src="../photo/набор3.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Набор №3</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price-menu">
+                    <p class="price">1470₽</p>
+                </div>
+                <div class="text-sostav">
+                    <p class="text-structure">1. Филадельфия классик - 4 шт.<br>
+                        2. Филадельфия KING - 4 шт.<br>
+                        3. Карамельная филадельфия - 4 шт.<br>
+                        4. Майями/Кана-ДА - 4 шт.<br></p>
+                </div>
+                <button class="order" data-name="Набор №3"
+                data-price="1470"
+                data-img="../photo/набор3.jpeg">Заказать</button>
+            </div>
+        </div>
+    
+        <div class="container-product-card-menu">
+            <div class="photo-menu">
+                <a href="../photo/набор4.jpeg" target="_blank"><img src="../photo/набор4.jpeg" alt="Фила" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Набор №4</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price-menu">
+                    <p class="price">1790₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure">1. Хотате -  (4 шт)<br>
+                    2. Карамельная филадельфия (4 шт)<br>
+                    3. Summer ролл - (4 шт)<br>
+                    4. Филадельфия King (4 шт)<br>
+                    5. Запеченные с лососем (3 шт)<br></p>
+                </div>
+                <button class="order" data-name="Набор №4"
+                data-price="1790"
+                data-img="../photo/набор4.jpeg">Заказать</button>
+            </div>
+        </div>
+        <div class="container-product-card-menu">
+            <div class="photo-menu">
+                <a href="../photo/набор5.jpeg" target="_blank"><img src="../photo/набор5.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Набор "Запеченный"</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price-menu">
+                    <p class="price">1610₽</p>
+                </div>
+                <div class="text-sostav">
+                <p class="text-structure"> 1. С лососем (3 шт)<br>
+                    2. С крабом (3 шт)<br>
+                    3. С угрем (3 шт)<br>
+                    4. С гребешком (3 шт)<br>
+                    5. Спайси снежный краб (4 шт)<br></p>
+                </div>
+                <button class="order" data-name="Набор Запеченный"
+                data-price="1610"
+                data-img="../photo/набор5.jpeg">Заказать</button>
+            </div>
+        </div>
+
+        <div class="container-product-card-menu">
+            <div class="photo-menu">
+                <a href="../photo/набор6.jpeg" target="_blank"><img src="../photo/набор6.jpeg" alt="Hot спайси лосось" id="photoOne" class="photoOne"></a>
+            </div>
+            <div class="container-text">
+                <p class="container-text-name"><b>Набор №6</b></p>
+                <p class="text-structure-main"><b>Состав: </b></p>
+                <div class="container-price-menu">
+                    <p class="price">1470₽</p>
+                </div>
+                <div class="text-sostav">
+                    <p class="text-structure">1. Summer ролл - (4 шт)<br>
+                        2. Тар-тар креветка - 4 шт.<br>
+                        3. Калифорния - 4 шт.<br>
+                        4. Маки с огурцом/авокадо - 12 шт.<br></p>
+                </div>
+                <button class="order" data-name="Набор №6"
+                data-price="1470"
+                data-img="../photo/набор6.jpeg">Заказать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-text-rolls" id="sets">
+        <a href="html/menu.html#sets" class="container-main-text-name link-heading"><b>СОПУТСТВУЮЩИЙ ТОВАР</b></a>
+    </div>
+    <div id="modal1" class="modal-block-container">
+        <p class="modal-sop">Дополнительно к заказу вы можете взять:</p>
+        <ul class="modal-ul">
+            <li class="modal-item">
+                <img src="../photo/имбирь.jpeg" alt="Имбирь" class="modal-img-comp">
+                <div class="modal-item-text-comp">
+                    <p class="modal-sop-tovar"><strong>Имбирь</strong></p>
+                    <p class="text-structure-modal-item">35 г</p>
+                    <p class="price-modal-item">55 ₽</p>
+                    <div class="modal-item-right">
+                        <button type="submit" class="modal-order-go-menu">В корзину</button>
+                    </div>
+                </div>
+            </li>
+            <li class="modal-item">
+                <img src="../photo/soev.jpeg" alt="Соевый соус" class="modal-img-comp">
+                <div class="modal-item-text-comp">
+                    <div class="modal-item-left">
+                        <p class="modal-sop-tovar"><strong>Соевый соус</strong></p>
+                        <p class="text-structure-modal-item">70 г</p>
+                        <p class="price-modal-item">75 ₽</p>
+                    </div>
+                    <div class="modal-item-right">
+                        <button type="submit" class="modal-order-go-menu">В корзину</button>
+                    </div>
+                </div>  
+            </li>
+            <li class="modal-item">
+                <img src="../photo/васаби.jpeg" alt="Васаби" class="modal-img-comp">
+                <div class="modal-item-text-comp">
+                    <p class="modal-sop-tovar"><strong>Васаби</strong></p>
+                    <p class="text-structure-modal-item">10 г</p>
+                    <p class="price-modal-item">55 ₽</p>
+                    <div class="modal-item-right">
+                        <button type="submit" class="modal-order-go-menu">В корзину</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pdf-banner-container">
+        <a href="..//photo/МЕНЮ Sushi TYK-TYK_NEW.pdf" target="_blank" class="pdf-banner-link">
+            Перейти к полному меню
+        </a>
+    </div>
+    
+    <div id="cart-float-btn" class="cart-float-btn" onclick="goToCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      
+    <button id="toTopBtn" title="Вернуться наверх">↑</button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html"><img src="../photo/logo.png" alt="TYK-TYK Лого"></a>
+            </div>
+            <div class="footer-info">
+                <p><strong>Телефон:</strong><br><a href="tel:+79005553535">+7 (900) 555-35-35</a></p>
+                <p><strong>Часы работы:</strong><br>Пн–Сб: 10:00–22:00 <br> Воскресенье: Выходной</p>
+                <p>
+                    <a href="https://t.me/sushityktik" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" class="telegram-icon"> Sushi 🍱 “ТYК-ТYК”
+                    </a>
+                </p>
+            </div>
+            <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6095799385143!2d30.31563531583092!3d59.93873218187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310d1d472ccb%3A0x3e49c3c787c2b8ee!2z0JHQvtCz0LDRgNC90LAg0JrQvtC80YHQvtCy0LAg0KHQvtCz0LXRgNC10YHRgtCy0LAsIDIy!5e0!3m2!1sru!2sru!4v1614842349314!5m2!1sru!2sru" 
+                width="300" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            </div>
+        </div>
+    <hr class="footer-line">
+    <p class="footer-copy">&copy; 2025 TYK-TYK. Все права защищены.</p>
+    </footer>
+      <script src="../js/js.js"></script>
+</body>
+</html>

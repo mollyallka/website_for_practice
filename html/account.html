@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TYK-TYK</title>
+</head>
+<body>
+    <div class="logo-section">
+        <div class="logo-wrap">
+            <span class="logo-text">TYK</span>
+            <div class="logo-img-wrap">
+                <a href="../index.html"><img src="../photo/logo.png" alt="Лого" id="logo" class="logo-img"></a>
+            </div>
+            <span class="logo-text">TYK</span>
+        </div>
+        <p class="logo-text-info">sushi delivery</p>
+    </div>
+
+    
+    <nav class="header-container-menu">
+        <ul class="menu-main">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../html/about_us.html">О нас</a></li>  
+            <li><a href="../html/menu.html">Меню</a></li>
+            <li><a href="../html/korzina.html">Корзина</a></li>
+            <li><a href="../html/account.html" class="active">Личный кабинет</a></li>
+        </ul>
+    </nav> 
+    <div class="line-menu"></div>
+
+    <form class="auth-form" id="authForm">
+        <h2 class="auth-title">Личный кабинет</h2>
+
+        <label>Имя*:
+            <input type="text" name="username" placeholder="Ваше имя пользователя">
+        </label>
+    
+        <label>Телефон*:
+            <input type="tel" name="phone" placeholder="+7 (9XX) XXX-XX-XX">
+        </label>
+    
+        <label>Адрес (улица, дом, квартира)*:
+            <input type="text" name="address">
+        </label>
+    
+        <label>Email:
+            <input type="email" name="email">
+        </label>
+    
+        <label>Дата рождения:
+            <input type="date" name="birthdate" min="1925-01-01" max="2012-12-31">
+        </label>
+    
+        <div class="custom-checkbox">
+            <input type="checkbox" name="offers" class="checkbox-text">
+            Получать уведомления о новинках
+        </div>
+
+    
+        <div class="form-error" id="formError"></div>
+
+        <button type="submit" class="order">Авторизоваться</button>
+
+    </form>
+    
+    <!-- профиль пользователя-->
+    <form id="userProfile" class="auth-form" style="display: none;">
+        <h2 class="auth-title">Мой профиль</h2>
+        <p><strong>Имя:</strong> <span id="profileName"></span></p>
+        <p><strong>Телефон:</strong> <span id="profilePhone"></span></p>
+        <p><strong>Адрес:</strong> <span id="profileAddress"></span></p>
+        <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+        <p><strong>Дата рождения:</strong> <span id="profileBirthdate"></span></p>
+        <button class="order-ramka" type="button" onclick="window.location.href='../html/korzina.html'">Вернуться к заказу</button>
+        <button class="order-ramka" type="button" onclick="window.location.href='../html/menu.html'">Перейти к меню</button>
+        <button id="logoutBtn" class="order" type="button">Выйти из профиля</button>
+    </form>
+
+
+    
+    <!-- Модальное окно -->
+    <div id="authModal" class="modal success-modal">
+      <div class="modal-content">
+        <span class="close" onclick="document.getElementById('authModal').style.display='none'">&times;</span>
+        Ваш профиль успешно создан!
+      </div>
+    </div>
+    
+    <div id="cart-float-btn" class="cart-float-btn" onclick="goToCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      
+    <button id="toTopBtn" title="Вернуться наверх">↑</button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html"><img src="../photo/logo.png" alt="TYK-TYK Лого"></a>
+            </div>
+            <div class="footer-info">
+                <p><strong>Телефон:</strong><br><a href="tel:+79005553535">+7 (900) 555-35-35</a></p>
+                <p><strong>Часы работы:</strong><br>Пн–Сб: 10:00–22:00 <br> Воскресенье: Выходной</p>
+                <p>
+                    <a href="https://t.me/sushityktik" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" class="telegram-icon"> Sushi 🍱 “ТYК-ТYК”
+                    </a>
+                </p>
+            </div>
+            <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6095799385143!2d30.31563531583092!3d59.93873218187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310d1d472ccb%3A0x3e49c3c787c2b8ee!2z0JHQvtCz0LDRgNC90LAg0JrQvtC80YHQvtCy0LAg0KHQvtCz0LXRgNC10YHRgtCy0LAsIDIy!5e0!3m2!1sru!2sru!4v1614842349314!5m2!1sru!2sru" 
+                width="300" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            </div>
+        </div>
+    <hr class="footer-line">
+    <p class="footer-copy">&copy; 2025 TYK-TYK. Все права защищены.</p>
+    </footer>
+      <script src="../js/js.js"></script>
+</body>
+</html>
