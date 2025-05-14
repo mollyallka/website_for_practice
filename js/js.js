@@ -234,6 +234,12 @@ if (clearCartBtn) {
     clearCartBtn.addEventListener("click", () => {
         localStorage.removeItem("cart");
         renderCart();
+    
+        const errorBlock = document.getElementById("formError");
+        if (errorBlock){
+            errorBlock.style.display = "none";
+            errorBlock.innerHTML = "";
+        }
     });
 }
 
